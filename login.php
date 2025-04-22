@@ -1,8 +1,11 @@
 <?php
 include 'config.php';
-session_start();
+// Include database connection
 
-// 🔁 If already logged in, send to homepage
+session_start();
+// Start session to manage user login data
+
+// 🔁 If the user is already logged in, redirect to the homepage
 if (isset($_SESSION['user_id'])) {
     header("Location: index.php");
     exit();

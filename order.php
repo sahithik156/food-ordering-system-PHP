@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <?php if ($orderSuccess): ?>
     <div class="card bg-light p-4 mt-4">
-      <h4 class="text-success">✅ Order Confirmed!</h4>
+      <h4 class="text-success"> Order Confirmed!</h4>
       <p><strong>Item:</strong> <?php echo $food['name']; ?></p>
       <p><strong>Quantity:</strong> <?php echo $quantity; ?></p>
       <p><strong>Total Price:</strong> $<?php echo number_format($food['price'] * $quantity, 2); ?></p>
